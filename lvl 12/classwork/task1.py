@@ -1,0 +1,10 @@
+name="demetre"
+surname="gagnidze"
+age=10
+color="blue"
+favorite_number=69
+print(type(name))
+print(type(surname))
+print(type(age))
+print(type(color))
+print(type(favorite_number))

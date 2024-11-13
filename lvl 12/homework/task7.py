@@ -1,0 +1,5 @@
+num=input("put you'r age")
+num1=input("put you'r mums age")
+print=float(num)
+print=float(num1)
+print(num>num1)
