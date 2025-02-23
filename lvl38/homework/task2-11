@@ -1,0 +1,76 @@
+# 2) Function Basics
+def hello_world():
+    print("Hello, World!")
+
+hello_world()
+
+# 3) Arguments and Parameters
+def sum_two_numbers(a, b):
+    print(a + b)
+
+sum_two_numbers(3, 5)
+
+# 4) Return Statement
+def multiply_by_ten(num):
+    return num * 10
+
+result = multiply_by_ten(7)
+print(result)
+
+# 5) Default Arguments
+def greet(name="Guest"):
+    print(f"Hello, {name}!")
+
+greet("Alice")
+greet()
+
+# 6) Boss level: Nested Functions
+def outer_function():
+    def inner_function():
+        print("Inner function called!")
+    inner_function()
+
+outer_function()
+
+# 7) Even or Odd Check for a List of Numbers
+def check_even_odd(numbers):
+    for num in numbers:
+        if num % 2 == 0:
+            print("Even")
+        else:
+            print("Odd")
+
+check_even_odd([1, 2, 3, 4, 5])
+# 8) Find the Maximum
+def find_max(numbers):
+    if not numbers:
+        return None
+    maximum = numbers[0]
+    for num in numbers:
+        if num > maximum:
+            maximum = num
+    return maximum
+
+print(find_max([4, 2, 8, 6, 10]))  # Expected output: 10
+
+# 9) Filter Positive Numbers
+def filter_positive(numbers):
+    positives = []
+    for num in numbers:
+        if num > 0:
+            positives.append(num)
+    return positives
+
+print(filter_positive([-3, 5, -1, 7, 0, -2, 8]))  # Expected output: [5, 7, 8]
+
+# 10) Sum of Numbers Divisible by 3 in Range 1 to 100
+def sum_divisible_by_three():
+    total = 0
+    for num in range(1, 101):
+        if num % 3 == 0:
+            total += num
+    return total
+
+print(sum_divisible_by_three())  # Expected output: 1683
+
+# 11) to read and i did it
