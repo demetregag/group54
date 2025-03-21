@@ -1,0 +1,11 @@
+
+ul {
+    list-style-type: square; /* შეცვლის მარკერს */
+    padding-left: 20px; /* სიის მარცხენა განლაგება */
+}
+
+li {
+    font-size: 18px;
+    color: #333;
+    margin: 5px 0;
+}

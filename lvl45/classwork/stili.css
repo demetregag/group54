@@ -1,0 +1,12 @@
+.box {
+    width: 794px;
+    height: 160px;
+    background-color: lightblue;
+    padding: 50px 20px;
+    border: 5px solid black;
+    margin: 30px 50px;
+}
+.container {
+    background-color: peachpuff;
+    padding: 5px;
+}
