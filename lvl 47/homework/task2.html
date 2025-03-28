@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Archery Target</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .target {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .apple {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background-color: red;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .stem {
+            position: absolute;
+            top: -10px;
+            width: 10px;
+            height: 20px;
+            background-color: brown;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="target">
+        <div class="apple" style="top: 20px; left: 20px;"><div class="stem"></div></div>
+        <div class="apple" style="top: 20px; right: 20px;"><div class="stem"></div></div>
+        <div class="apple" style="bottom: 20px; left: 20px;"><div class="stem"></div></div>
+        <div class="apple" style="bottom: 20px; right: 20px;"><div class="stem"></div></div>
+        <div class="apple" style="top: 50%; left: 50%; transform: translate(-50%, -50%);"><div class="stem"></div></div>
+    </div>
+</body>
+</html>
