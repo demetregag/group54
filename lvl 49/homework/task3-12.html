@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Flex container with row direction */
+    .flex-container {
+      display: flex;
+      flex-direction: row; /* Items in a row by default */
+      justify-content: space-between; /* Distribute items evenly with space between them */
+      align-items: flex-start; /* Align items at the top by default */
+      flex-wrap: wrap; /* Wrap items to the next line if the container is too small */
+      margin: 10px;
+      height: 200px;
+      background-color: #f3f3f3;
+    }
+
+    /* Flex items */
+    .flex-item {
+      border: 2px solid #000;
+      padding: 20px;
+      margin: 10px;
+      background-color: #a2dff7;
+    }
+
+    /* Make one item grow twice as much as others */
+    .flex-item:nth-child(2) {
+      flex-grow: 2;
+    }
+
+    /* Align one specific item to the bottom while keeping others at the top */
+    .flex-item:nth-child(3) {
+      align-self: flex-end;
+    }
+
+    /* Set all items to have equal width */
+    .flex-item {
+      flex: 1;
+    }
+
+    /* Reverse the order of items */
+    .flex-container.reverse {
+      flex-direction: row-reverse;
+    }
+
+    /* Center all items both horizontally and vertically */
+    .flex-container.center {
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Change the direction of items to a vertical column */
+    .flex-container.vertical {
+      flex-direction: column;
+    }
+  </style>
+  <title>Flexbox Example</title>
+</head>
+<body>
+
+  <!-- Flex container with all items -->
+  <div class="flex-container">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <!-- Flex container with reversed order of items -->
+  <div class="flex-container reverse">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <!-- Flex container with all items centered both horizontally and vertically -->
+  <div class="flex-container center">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <!-- Flex container with items in a vertical column -->
+  <div class="flex-container vertical">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+</body>
+</html>

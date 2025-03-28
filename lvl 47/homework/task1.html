@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archery Target with DIVs</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .target {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: skyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ring {
+            position: absolute;
+            border-radius: 50%;
+        }
+        .red {
+            width: 220px;
+            height: 220px;
+            background-color: red;
+        }
+        .yellow {
+            width: 140px;
+            height: 140px;
+            background-color: yellow;
+        }
+        .black {
+            width: 70px;
+            height: 70px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="target">
+        <div class="ring red"></div>
+        <div class="ring yellow"></div>
+        <div class="ring black"></div>
+    </div>
+</body>
+</html>
