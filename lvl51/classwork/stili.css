@@ -1,0 +1,8 @@
+
+#main-div {
+    width: 1000px;
+    height: 750px;
+    background-image: url('background.jpg'); /* შეცვალეთ სურათის ბმული საჭიროებისამებრ */
+    background-size: cover;
+    background-position: center;
+}

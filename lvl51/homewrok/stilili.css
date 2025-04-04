@@ -1,0 +1,40 @@
+
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.box {
+    width: 80px;
+    height: 80px;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 5px;
+}
+.blue {
+    background-color: blue;
+    color: white;
+    top: 10px;
+    left: 10px;
+}
+.green {
+    background-color: green;
+    color: black;
+    top: 40px;
+    left: 100px;
+}
+.yellow {
+    background-color: yellow;
+    color: black;
+    top: 40px;
+    left: 200px;
+}
