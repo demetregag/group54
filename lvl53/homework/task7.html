@@ -1,0 +1,31 @@
+<a href="#modal">Open Modal</a>
+
+<div id="modal" class="modal">
+  <a href="#" class="close">Close</a>
+  <p>This is a modal</p>
+</div>
+
+<style>
+  .modal {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+    opacity: 0;
+    background: white;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    z-index: 1000;
+  }
+
+  #modal:target {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+  }
+
+  .close {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+</style>

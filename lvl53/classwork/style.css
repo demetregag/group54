@@ -1,0 +1,18 @@
+.custom-box {
+    width: 300px;
+    height: 150px;
+    background-color: green;
+    border: 2px solid black;
+  
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  
+    transition: transform 0.5s ease;
+  }
+  
+  .custom-box:hover {
+    transform: rotate(40deg) scale(2) translateY(200px);
+  }
+  

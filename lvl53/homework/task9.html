@@ -1,0 +1,32 @@
+<div class="tooltip-container">
+    Hover me
+    <div class="tooltip">I'm a tooltip!</div>
+  </div>
+  
+  <style>
+    .tooltip-container {
+      position: relative;
+      display: inline-block;
+      margin-top: 40px;
+    }
+  
+    .tooltip {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      background: black;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 4px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+  
+    .tooltip-container:hover .tooltip {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+  

@@ -1,0 +1,21 @@
+<input type="checkbox" id="toggle-text" hidden>
+<label for="toggle-text" class="text-label">Toggle Text</label>
+<p class="rotatable-text">Rotate me</p>
+
+<style>
+  .rotatable-text {
+    transition: transform 0.4s ease;
+    margin-top: 10px;
+  }
+
+  #toggle-text:checked ~ .rotatable-text {
+    transform: rotate(180deg);
+  }
+
+  .text-label {
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+</style>
