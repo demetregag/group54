@@ -1,0 +1,12 @@
+.circle {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    border-radius: 50%;
+    transition: transform 3s ease 5s;
+  }
+  
+  .circle:hover {
+    transform: translateY(-100px) scale(3);
+  }
+  

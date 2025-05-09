@@ -1,0 +1,18 @@
+@keyframes moveBox {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(100px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    animation: moveBox 5s ease-in 2s infinite;
+  }

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Animation</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: coral;
+      margin: 50px;
+      animation: moveRight 2s linear forwards;
+    }
+
+    @keyframes moveRight {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(300px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

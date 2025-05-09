@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rotate 360° Animation</title>
+  <style>
+    @keyframes rotate360 {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .rotating-element {
+      width: 100px;
+      height: 100px;
+      background-color: #4CAF50;
+      margin: 50px auto;
+      animation: rotate360 2s linear infinite;
+    }
+  </style>
+</head>
+<body>
+
+<div class="rotating-element"></div>
+
+</body>
+</html>

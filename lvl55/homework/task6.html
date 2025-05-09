@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Change Animation</title>
+  <style>
+    .color-box {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      animation: changeColor 5s linear forwards;
+    }
+
+    @keyframes changeColor {
+      from {
+        background-color: blue;
+      }
+      to {
+        background-color: red;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="color-box"></div>
+</body>
+</html>

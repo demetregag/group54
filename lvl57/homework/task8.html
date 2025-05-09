@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>One-Time Animation</title>
+  <style>
+    .animate-box {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      animation: moveUp 2s forwards;
+    }
+
+    @keyframes moveUp {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-200px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="animate-box"></div>
+</body>
+</html>
