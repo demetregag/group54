@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Number Pyramid</title>
+  <style>
+    body {
+      background: #f9f9f9;
+      font-family: monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .pyramid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .row {
+      display: flex;
+      gap: 20px; /* Adjust spacing between numbers */
+      justify-content: center;
+    }
+
+    .row span {
+      min-width: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="pyramid">
+    <div class="row"><span>12</span></div>
+    <div class="row"><span>6</span><span>6</span></div>
+    <div class="row"><span>4</span><span>4</span><span>4</span></div>
+    <div class="row"><span>3</span><span>3</span><span>3</span><span>3</span></div>
+    <div class="row"><span>2</span><span>2</span><span>2</span><span>2</span><span>2</span><span>2</span></div>
+    <div class="row"><span>1</span><span>1</span><span>1</span><span>1</span><span>1</span><span>1</span><span>1</span><span>1</span><span>1</span></div>
+  </div>
+</body>
+</html>

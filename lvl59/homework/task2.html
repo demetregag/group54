@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Layout</title>
+  <style>
+    body {
+      margin: 0;
+      background: #222;
+      font-family: sans-serif;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "hero hero side1"
+        "hero hero side2"
+        "content content content"
+        "box1 box2 box3"
+        "box4 box5 box6";
+      grid-template-columns: 2fr 2fr 1fr;
+      grid-template-rows: repeat(5, 1fr);
+      gap: 10px;
+      padding: 10px;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      color: white;
+      border-radius: 10px;
+      position: relative;
+    }
+
+    .item::before {
+      content: attr(class);
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: #fff;
+      color: #000;
+      font-size: 0.9rem;
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 6px;
+      transform: rotate(5deg);
+    }
+
+    /* Grid area assignments */
+    .hero    { grid-area: hero;    background: linear-gradient(135deg, #ff69b4, #ffb6c1); }
+    .side1   { grid-area: side1;   background: linear-gradient(135deg, #00d2ff, #3a7bd5); }
+    .side2   { grid-area: side2;   background: linear-gradient(135deg, #00d2ff, #3a7bd5); }
+    .content { grid-area: content; background: linear-gradient(135deg, #d8bfd8, #dda0dd); }
+    .box1    { grid-area: box1;    background: linear-gradient(135deg, #ff7e5f, #feb47b); }
+    .box2    { grid-area: box2;    background: linear-gradient(135deg, #ff7e5f, #feb47b); }
+    .box3    { grid-area: box3;    background: linear-gradient(135deg, #ff7e5f, #feb47b); }
+    .box4    { grid-area: box4;    background: linear-gradient(135deg, #ff7e5f, #feb47b); }
+    .box5    { grid-area: box5;    background: linear-gradient(135deg, #ff7e5f, #feb47b); }
+    .box6    { grid-area: box6;    background: linear-gradient(135deg, #ff7e5f, #feb47b); }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="item hero">1</div>
+    <div class="item side1">2</div>
+    <div class="item side2">3</div>
+    <div class="item content">4</div>
+    <div class="item box1">5</div>
+    <div class="item box2">6</div>
+    <div class="item box3">7</div>
+    <div class="item box4">8</div>
+    <div class="item box5">9</div>
+    <div class="item box6">10</div>
+  </div>
+</body>
+</html>

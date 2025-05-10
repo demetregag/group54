@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Profile Card</title>
+  <style>
+    /* Base styles */
+    .profile-card {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 16px;
+      max-width: 600px;
+      margin: 20px auto;
+      transition: all 0.3s ease;
+    }
+
+    .profile-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    .profile-info h2 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .profile-info p {
+      margin: 5px 0;
+      color: #777;
+    }
+
+    /* Media Query for small screens (mobile) */
+    @media (max-width: 768px) {
+      .profile-card {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+
+      .profile-img {
+        margin-bottom: 10px;
+      }
+
+      .profile-info {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-card">
+    <img src="profile-picture.jpg" alt="Profile Picture" class="profile-img">
+    <div class="profile-info">
+      <h2>John Doe</h2>
+      <p>Web Developer</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+
+</body>
+</html>

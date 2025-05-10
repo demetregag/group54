@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Six Green Divs</title>
+  <style>
+    body {
+      background-color: #f4f4f9;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+      height: 100%;
+    }
+
+    .box {
+      background-color: #4CAF50; /* Green Background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      height: 100%;
+    }
+
+    .box p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box"><p>Div 1</p><p>Lorem ipsum dolor sit amet.</p></div>
+    <div class="box"><p>Div 2</p><p>Consectetur adipiscing elit.</p></div>
+    <div class="box"><p>Div 3</p><p>Quisque vel tincidunt metus.</p></div>
+    <div class="box"><p>Div 4</p><p>Nullam interdum leo ac lacus.</p></div>
+    <div class="box"><p>Div 5</p><p>Etiam consequat sapien eget metus.</p></div>
+    <div class="box"><p>Div 6</p><p>Vestibulum ante ipsum primis.</p></div>
+  </div>
+</body>
+</html>

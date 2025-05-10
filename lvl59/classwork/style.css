@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.responsive-paragraph {
+    font-size: 5vw; 
+    line-height: 1.6;
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    .responsive-paragraph {
+        font-size: 6vw;
+    }
+}
