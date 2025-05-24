@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <p id="messagePara">This message will be updated.</p>
+
+  <script>
+    const hobby = prompt("What is your favorite hobby?");
+    alert("Your favorite hobby is: " + hobby);
+
+    const firstName = prompt("Enter your first name:");
+    const lastName = prompt("Enter your last name:");
+    const fullName = firstName + " " + lastName;
+    alert("Your full name is: " + fullName);
+
+    const message = prompt("Enter a message to display on the page:");
+    document.getElementById("messagePara").textContent = message;
+
+    const emoji = prompt("What is your favorite emoji?");
+    alert("Thanks! Your favorite emoji is: " + emoji);
+
+    const titleWord = prompt("Enter a word to set as the page title:");
+    document.title = titleWord;
+  </script>
+</body>
+</html>

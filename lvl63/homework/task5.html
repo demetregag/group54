@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Greeting Change</title>
+</head>
+<body>
+  <div id="greeting">Hello!</div>
+  <button id="change">Change Greeting</button>
+
+  <script>
+    document.getElementById("change").onclick = function() {
+      document.getElementById("greeting").textContent = "Hi there!";
+    };
+  </script>
+</body>
+</html>

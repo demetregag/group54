@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Status Toggle</title>
+</head>
+<body>
+  <p id="status" style="color: gray;">Offline</p>
+  <button id="toggle">Go Online</button>
+
+  <script>
+    document.getElementById("toggle").onclick = function() {
+      document.getElementById("status").textContent = "Online";
+      document.getElementById("status").style.color = "green";
+    };
+  </script>
+</body>
+</html>
