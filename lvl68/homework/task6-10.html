@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Type Conversion</title>
+</head>
+<body>
+
+  <h1>Open the console to see results</h1>
+
+  <script>
+    const num = 42
+    const numToString = String(num)
+    console.log(numToString, typeof numToString)
+
+    const bool = true
+    const boolToString = String(bool)
+    console.log(boolToString, typeof boolToString)
+
+    const strNum = "123"
+    const strToNum = Number(strNum)
+    console.log(strToNum, typeof strToNum)
+
+    const boolToNum = Number(false)
+    console.log(boolToNum, typeof boolToNum)
+
+    const invalidStr = "hello"
+    const result = Number(invalidStr)
+    console.log(result, typeof result)
+  </script>
+
+</body>
+</html>

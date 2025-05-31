@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conditions</title>
+</head>
+<body>
+  <h1>Check the console</h1>
+  <script>
+    const number = Number(prompt("Enter a number:"))
+    if (number > 0) {
+      console.log("Positive")
+    } else if (number < 0) {
+      console.log("Negative")
+    } else {
+      console.log("Zero")
+    }
+    const age = Number(prompt("Enter age:"))
+    if (age >= 18) {
+      console.log("Can vote")
+    } else {
+      console.log("Can't vote")
+    }
+    const first = Number(prompt("First number:"))
+    const second = Number(prompt("Second number:"))
+    if (first > second) {
+      console.log("First is larger")
+    } else if (second > first) {
+      console.log("Second is larger")
+    } else {
+      console.log("Equal")
+    }
+  </script>
+</body>
+</html>
