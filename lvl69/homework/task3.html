@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grade Assigner</title>
+</head>
+<body>
+  <h2>Grade Assigner</h2>
+  <input type="number" id="scoreInput" placeholder="Enter your score">
+  <button onclick="assignGrade()">Assign Grade</button>
+  <p id="gradeResult"></p>
+
+  <script>
+    function assignGrade() {
+      var score = parseInt(document.getElementById('scoreInput').value);
+      var grade;
+      if (isNaN(score)) {
+        grade = "Please enter a valid score.";
+      } else if (score >= 90) {
+        grade = "Grade A";
+      } else if (score >= 80) {
+        grade = "Grade B";
+      } else if (score >= 70) {
+        grade = "Grade C";
+      } else if (score >= 60) {
+        grade = "Grade D";
+      } else {
+        grade = "Fail";
+      }
+      document.getElementById('gradeResult').textContent = grade;
+    }
+  </script>
+</body>
+</html>

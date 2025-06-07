@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Countdown</title>
+</head>
+<body>
+  <h2>Print Numbers from 10 to 1</h2>
+  <button onclick="countDown()">Print</button>
+  <pre id="output"></pre>
+
+  <script>
+    function countDown() {
+      let output = '';
+      let i = 10;
+      while (i >= 1) {
+        output += i + '\n';
+        i--;
+      }
+      document.getElementById('output').textContent = output;
+    }
+  </script>
+</body>
+</html>

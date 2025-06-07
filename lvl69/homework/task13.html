@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reverse Countdown</title>
+</head>
+<body>
+  <h2>Print Numbers from 10 to 1</h2>
+  <button onclick="reverseCount()">Print</button>
+  <pre id="output"></pre>
+
+  <script>
+    function reverseCount() {
+      let output = '';
+      for (let i = 10; i >= 1; i--) {
+        output += i + '\n';
+      }
+      document.getElementById('output').textContent = output;
+    }
+  </script>
+</body>
+</html>

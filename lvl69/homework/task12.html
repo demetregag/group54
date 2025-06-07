@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiples of 3</title>
+</head>
+<body>
+  <h2>First 5 Multiples of 3</h2>
+  <button onclick="printMultiples()">Print</button>
+  <pre id="output"></pre>
+
+  <script>
+    function printMultiples() {
+      let output = '';
+      for (let i = 1; i <= 5; i++) {
+        output += (i * 3) + '\n';
+      }
+      document.getElementById('output').textContent = output;
+    }
+  </script>
+</body>
+</html>

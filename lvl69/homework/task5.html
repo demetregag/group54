@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vowel or Consonant Checker</title>
+</head>
+<body>
+  <h2>Vowel or Consonant Checker</h2>
+  <input type="text" id="charInput" maxlength="1" placeholder="Enter a letter">
+  <button onclick="checkCharacter()">Check</button>
+  <p id="charResult"></p>
+
+  <script>
+    function checkCharacter() {
+      var char = document.getElementById('charInput').value.toLowerCase();
+      var vowels = ['a', 'e', 'i', 'o', 'u'];
+      var result;
+      if (char.length === 0 || !char.match(/[a-z]/i)) {
+        result = "Please enter a valid alphabet character.";
+      } else if (vowels.includes(char)) {
+        result = char + " is a Vowel.";
+      } else {
+        result = char + " is a Consonant.";
+      }
+      document.getElementById('charResult').textContent = result;
+    }
+  </script>
+</body>
+</html>

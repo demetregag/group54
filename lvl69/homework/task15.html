@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sum 1 to 5</title>
+</head>
+<body>
+  <h2>Sum of Numbers from 1 to 5</h2>
+  <button onclick="calculateSum()">Calculate</button>
+  <p id="output"></p>
+
+  <script>
+    function calculateSum() {
+      let sum = 0;
+      for (let i = 1; i <= 5; i++) {
+        sum += i;
+      }
+      document.getElementById('output').textContent = 'Sum: ' + sum;
+    }
+  </script>
+</body>
+</html>

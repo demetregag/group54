@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Even Numbers 1 to 20</title>
+</head>
+<body>
+  <h2>Even Numbers from 1 to 20</h2>
+  <button onclick="printEvenNumbers()">Print</button>
+  <pre id="output"></pre>
+
+  <script>
+    function printEvenNumbers() {
+      let output = '';
+      for (let i = 2; i <= 20; i += 2) {
+        output += i + '\n';
+      }
+      document.getElementById('output').textContent = output;
+    }
+  </script>
+</body>
+</html>
