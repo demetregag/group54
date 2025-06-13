@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <div id="content">
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+  </div>
+
+  <script>
+    let contentDiv = document.getElementById("content");
+    let firstChild = contentDiv.firstElementChild;
+    contentDiv.removeChild(firstChild);
+
+    let ul = document.createElement("ul");
+
+    let li1 = document.createElement("li");
+    li1.textContent = "Item 1";
+    ul.appendChild(li1);
+
+    let li2 = document.createElement("li");
+    li2.textContent = "Item 2";
+    ul.appendChild(li2);
+
+    let li3 = document.createElement("li");
+    li3.textContent = "Item 3";
+    ul.appendChild(li3);
+
+    document.body.appendChild(ul);
+
+    let lastLi = ul.lastElementChild;
+    ul.removeChild(lastLi);
+  </script>
+</body>
+</html>

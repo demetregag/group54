@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+
+  <script>
+    let p = document.createElement("p");
+    p.textContent = "This is a new paragraph.";
+    document.body.appendChild(p);
+
+    let h1 = document.createElement("h1");
+    h1.textContent = "This is a heading";
+    document.getElementById("myDiv").appendChild(h1);
+
+    let img = document.createElement("img");
+    img.src = "https://via.placeholder.com/150";
+    img.alt = "Placeholder Image";
+    document.body.appendChild(img);
+
+    let button = document.createElement("button");
+    button.textContent = "Click me";
+    document.body.appendChild(button);
+
+    let ul = document.createElement("ul");
+
+    let li1 = document.createElement("li");
+    li1.textContent = "Item 1";
+    ul.appendChild(li1);
+
+    let li2 = document.createElement("li");
+    li2.textContent = "Item 2";
+    ul.appendChild(li2);
+
+    let li3 = document.createElement("li");
+    li3.textContent = "Item 3";
+    ul.appendChild(li3);
+
+    document.body.appendChild(ul);
+  </script>
+</body>
+</html>

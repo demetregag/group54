@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Replace Elements</title>
+</head>
+<body>
+  <div id="textContainer">
+    <p>Old paragraph</p>
+  </div>
+
+  <div id="buttonContainer">
+    <button>Old Button</button>
+  </div>
+
+  <ul id="itemList">
+    <li>Old item</li>
+  </ul>
+
+  <div id="headingContainer">
+    <h2>Old Heading</h2>
+  </div>
+
+  <script>
+    let textContainer = document.getElementById("textContainer");
+    let newP = document.createElement("p");
+    newP.textContent = "New paragraph";
+    let oldP = textContainer.querySelector("p");
+    textContainer.replaceChild(newP, oldP);
+
+    let buttonContainer = document.getElementById("buttonContainer");
+    let newSpan = document.createElement("span");
+    newSpan.textContent = "New span";
+    let oldButton = buttonContainer.querySelector("button");
+    buttonContainer.replaceChild(newSpan, oldButton);
+
+    let itemList = document.getElementById("itemList");
+    let newLi = document.createElement("li");
+    newLi.textContent = "New item";
+    let oldLi = itemList.querySelector("li");
+    itemList.replaceChild(newLi, oldLi);
+
+    let headingContainer = document.getElementById("headingContainer");
+    let newH1 = document.createElement("h1");
+    newH1.textContent = "New Heading";
+    let oldH2 = headingContainer.querySelector("h2");
+    headingContainer.replaceChild(newH1, oldH2);
+  </script>
+</body>
+</html>
