@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Names</title>
+</head>
+<body>
+
+<input id="nameInput" placeholder="Enter name">
+<button id="addName">Add</button>
+<ul id="nameList"></ul>
+
+<script>
+let input = document.getElementById("nameInput");
+let button = document.getElementById("addName");
+let list = document.getElementById("nameList");
+
+button.addEventListener("click", function () {
+  let li = document.createElement("li");
+  li.textContent = input.value;
+  list.appendChild(li);
+  input.value = "";
+});
+</script>
+
+</body>
+</html>

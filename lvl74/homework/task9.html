@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Typing Speed Test</title>
+</head>
+<body>
+
+<p id="sentence"></p>
+<input id="typeInput" placeholder="Type here" disabled>
+<button id="startBtn">Start</button>
+<p id="result"></p>
+
+<script>
+let sentences = [
+  "The quick brown fox jumps over the lazy dog",
+  "JavaScript is fun to learn",
+  "Typing fast is a useful skill"
+];
+let currentSentence = "";
+let startTime;
+
+document.getElementById("startBtn").addEventListener("click", function () {
+  currentSentence = sentences[Math.floor(Math.random() * sentences.length)];
+  document.getElementById("sentence").textContent = currentSentence;
+  document.getElementById("typeInput").value = "";
+  document.getElementById("typeInput").disabled = false;
+  document.getElementById("typeInput").focus();
+  startTime = new Date().getTime();
+});
+
+document.getElementById("typeInput").addEventListener("input", function () {
+  if (this.value === currentSentence) {
+    let endTime = new Date().getTime();
+    let seconds = (endTime - startTime) / 1000;
+    let words = currentSentence.split(" ").length;
+    let wpm = Math.round((words / seconds) * 60);
+    document.getElementById("result").textContent = `Time: ${seconds.toFixed(2)}s | WPM: ${wpm}`;
+    this.disabled = true;
+  }
+});
+</script>
+
+</body>
+</html>

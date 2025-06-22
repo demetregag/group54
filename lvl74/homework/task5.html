@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cycle Colors</title>
+</head>
+<body>
+
+<button id="colorBtn">Change Color</button>
+
+<script>
+let colors = ["red", "blue", "green", "yellow", "purple"];
+let i = 0;
+
+document.getElementById("colorBtn").addEventListener("click", function () {
+  document.body.style.backgroundColor = colors[i];
+  i++;
+  if (i >= colors.length) {
+    i = 0;
+  }
+});
+</script>
+
+</body>
+</html>

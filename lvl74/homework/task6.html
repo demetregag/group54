@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Box Creator</title>
+</head>
+<body>
+
+<input id="boxCount" type="number" placeholder="Number of boxes">
+<button id="createBoxes">Create</button>
+<div id="boxContainer"></div>
+
+<script>
+function getRandomColor() {
+  return "#" + Math.floor(Math.random() * 16777215).toString(16);
+}
+
+document.getElementById("createBoxes").addEventListener("click", function () {
+  let count = parseInt(document.getElementById("boxCount").value);
+  let container = document.getElementById("boxContainer");
+  container.innerHTML = "";
+  for (let i = 0; i < count; i++) {
+    let box = document.createElement("div");
+    box.style.width = "50px";
+    box.style.height = "50px";
+    box.style.margin = "5px";
+    box.style.display = "inline-block";
+    box.style.backgroundColor = getRandomColor();
+    container.appendChild(box);
+  }
+});
+</script>
+
+</body>
+</html>
