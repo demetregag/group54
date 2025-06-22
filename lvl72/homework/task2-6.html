@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Tasks</title>
+</head>
+<body>
+
+<button id="alertBtn">Click Me</button>
+
+<p id="hoverText">Hover over me!</p>
+
+<div id="toggleDiv" style="width:100px; height:100px; background-color:lightblue;"></div>
+
+<input type="text" id="myInput" value="Hello!">
+
+<button id="toggleImageBtn">Show/Hide Image</button>
+<img id="myImage" src="https://via.placeholder.com/150" style="display:none;">
+
+<script>
+document.getElementById("alertBtn").addEventListener("click", function () {
+  alert("Button was clicked!");
+});
+
+document.getElementById("hoverText").addEventListener("mouseover", function () {
+  this.textContent = "You're hovering!";
+});
+
+let isBlue = true;
+document.getElementById("toggleDiv").addEventListener("click", function () {
+  this.style.backgroundColor = isBlue ? "lightgreen" : "lightblue";
+  isBlue = !isBlue;
+});
+
+document.getElementById("myInput").addEventListener("click", function () {
+  console.log(this.value);
+});
+
+document.getElementById("toggleImageBtn").addEventListener("click", function () {
+  let img = document.getElementById("myImage");
+  img.style.display = img.style.display === "none" ? "block" : "none";
+});
+</script>
+
+</body>
+</html>

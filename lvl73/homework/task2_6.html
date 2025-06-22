@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>All Timers</title>
+</head>
+<body>
+
+<script>
+let num = 1;
+let countInterval = setInterval(function () {
+  console.log("Counter:", num);
+  if (num === 5) {
+    clearInterval(countInterval);
+  }
+  num++;
+}, 1000);
+
+let msgInterval = setInterval(function () {
+  console.log("Message every 2 seconds");
+}, 2000);
+
+setTimeout(function () {
+  clearInterval(msgInterval);
+}, 10000);
+
+let colors = ["red", "blue", "green", "yellow", "purple"];
+let i = 0;
+
+let bgInterval = setInterval(function () {
+  document.body.style.backgroundColor = colors[i];
+  i++;
+  if (i === 5) {
+    clearInterval(bgInterval);
+  }
+}, 3000);
+
+let timeInterval = setInterval(function () {
+  let now = new Date();
+  console.log("Time:", now.toLocaleTimeString());
+}, 1000);
+
+setTimeout(function () {
+  clearInterval(timeInterval);
+}, 15000);
+
+let seconds = 0;
+let timer = setInterval(function () {
+  seconds++;
+  console.log("Timer:", seconds + "s");
+  if (seconds === 10) {
+    clearInterval(timer);
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
