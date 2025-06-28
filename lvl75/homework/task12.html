@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slide Animation</title>
+  <style>
+    #box {
+      width: 100px;
+      height: 100px;
+      background-color: steelblue;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="box"></div>
+
+  <script>
+    let box = document.getElementById("box");
+    let position = 0;
+
+    setInterval(() => {
+      position += 5;
+      box.style.left = position + "px";
+    }, 100);
+  </script>
+
+</body>
+</html>

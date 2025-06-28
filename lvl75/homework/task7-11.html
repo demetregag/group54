@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Class Tasks</title>
+</head>
+<body>
+
+  <div class="highlight">Highlight 1</div>
+  <div class="highlight">Highlight 2</div>
+
+  <div class="card">Card A</div>
+  <div class="card">Card B</div>
+  <div class="card">Card C</div>
+
+  <p class="error">This is an error message.</p>
+  <span class="error">Another error.</span>
+
+  <div class="item"><strong>Item 1</strong></div>
+  <div class="item"><em>Item 2</em></div>
+
+  <button class="button">Original</button>
+
+  <script>
+    let highlights = document.querySelectorAll(".highlight");
+    for (let i = 0; i < highlights.length; i++) {
+      highlights[i].style.backgroundColor = "yellow";
+    }
+
+    let cards = document.querySelectorAll(".card");
+    console.log("Number of .card elements:", cards.length);
+
+    let errors = document.querySelectorAll(".error");
+    for (let i = 0; i < errors.length; i++) {
+      errors[i].style.color = "red";
+    }
+
+    let items = document.querySelectorAll(".item");
+    for (let i = 0; i < items.length; i++) {
+      console.log(items[i].innerHTML);
+    }
+
+    let firstButton = document.querySelector(".button");
+    firstButton.textContent = "Clicked!";
+  </script>
+
+</body>
+</html>

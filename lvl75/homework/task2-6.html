@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Tasks</title>
+</head>
+<body>
+
+  <p>Paragraph 1</p>
+  <p>Paragraph 2</p>
+
+  <h2>Heading 1</h2>
+  <h2>Heading 2</h2>
+
+  <ul>
+    <li>Item A</li>
+    <li>Item B</li>
+  </ul>
+
+  <div>Box 1</div>
+  <div>Box 2</div>
+
+  <img src="https://via.placeholder.com/100" alt="Example Image">
+
+  <script>
+    let pTags = document.querySelectorAll("p");
+    alert("Number of <p> tags: " + pTags.length);
+
+    let h2Tags = document.querySelectorAll("h2");
+    for (let i = 0; i < h2Tags.length; i++) {
+      h2Tags[i].style.color = "blue";
+    }
+
+    let liTags = document.querySelectorAll("li");
+    for (let i = 0; i < liTags.length; i++) {
+      console.log(liTags[i].textContent);
+    }
+
+    let divs = document.querySelectorAll("div");
+    for (let i = 0; i < divs.length; i++) {
+      divs[i].style.backgroundColor = "lightgray";
+    }
+
+    let firstImg = document.querySelector("img");
+    firstImg.src = "https://via.placeholder.com/150";
+  </script>
+</body>
+</html>
