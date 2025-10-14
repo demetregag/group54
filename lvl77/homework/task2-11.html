@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pTags = document.querySelectorAll("p");
+alert(pTags.length);
+
+let h2s = document.querySelectorAll("h2");
+for (let h of h2s) {
+    h.style.color = "blue";
+}
+
+let lis = document.querySelectorAll("li");
+for (let li of lis) {
+    console.log(li.textContent);
+}
+
+let divs = document.querySelectorAll("div");
+for (let d of divs) {
+    d.style.backgroundColor = "lightgray";
+}
+
+let img = document.querySelector("img");
+if (img) {
+    img.src = "https://via.placeholder.com/150";
+}
+
+let highlights = document.querySelectorAll(".highlight");
+for (let el of highlights) {
+    el.style.backgroundColor = "yellow";
+}
+
+let cards = document.querySelectorAll(".card");
+console.log(cards.length);
+
+let errors = document.querySelectorAll(".error");
+for (let e of errors) {
+    e.style.color = "red";
+}
+
+let items = document.querySelectorAll(".item");
+for (let item of items) {
+    console.log(item.innerHTML);
+}
+
+let btn = document.querySelector(".button");
+if (btn) {
+    btn.textContent = "Clicked!";
+}
+
+    </script>
+</body>
+</html>

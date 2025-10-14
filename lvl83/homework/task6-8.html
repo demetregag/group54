@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    function localExample() {
+        let message = "I exist only inside this function";
+        console.log("Inside function:", message);
+    }
+    localExample();
+    console.log("Outside function:", message);
+
+
+    function outerFunction() {
+        let counter = 0;
+        console.log("Before inner function call:", counter);
+
+        function innerFunction() {
+            counter += 5;
+            console.log("Inside inner function:", counter);
+        }
+
+        innerFunction();
+        console.log("After inner function call:", counter);
+    }
+    outerFunction();
+
+    function scopeTest() {
+        if (true) {
+            var x = "var → function-scoped";
+            let y = "let → block-scoped";
+            const z = "const → block-scoped";
+        }
+        console.log(x);
+        console.log(y);
+        console.log(z);
+    }
+    scopeTest();
+
+    function test() {
+        var a = 1;
+        let b = 2;
+        const c = 3;
+    }
+    console.log(a);
+    console.log(b);
+    console.log(c);
+   
+    </script>
+</body>
+</html>

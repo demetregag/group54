@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let body = document.body;
+let btn = document.createElement("button");
+btn.textContent = "დაწყება";
+let div = document.createElement("div");
+body.appendChild(btn);
+body.appendChild(div);
+
+btn.addEventListener("click", function () {
+    let size = 300;
+    let count = 1;
+    div.style.width = size + "px";
+    div.style.height = size + "px";
+    div.style.backgroundColor = "red";
+
+    let interval = setInterval(function () {
+        let p = document.createElement("p");
+        let text = document.createTextNode("p" + count);
+        p.appendChild(text);
+        body.appendChild(p);
+        count++;
+        size -= 10;
+        div.style.width = size + "px";
+        div.style.height = size + "px";
+        if (size <= 0) {
+            clearInterval(interval);
+            div.style.display = "none";
+        }
+    }, 3000);
+});
+
+    </script>
+</body>
+</html>

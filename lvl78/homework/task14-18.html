@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let person = { name: "Ana", age: 25, city: "Tbilisi" };
+
+for (let key in person) {
+    console.log(key);
+}
+
+for (let key in person) {
+    console.log(person[key]);
+}
+
+let count = 0;
+for (let key in person) {
+    count++;
+}
+console.log(count);
+
+let found = false;
+for (let key in person) {
+    if (key === "age") {
+        found = true;
+    }
+}
+console.log(found);
+
+let keys = "";
+for (let key in person) {
+    keys += key + " ";
+}
+console.log(keys.trim());
+
+    </script>
+</body>
+</html>
