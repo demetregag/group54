@@ -1,0 +1,16 @@
+<script>
+console.log(Math.trunc(12.987));
+
+console.log(Math.trunc(-45.67));
+console.log(Math.floor(-45.67));
+
+const randomNum = Math.random() * 100;
+console.log(Math.trunc(randomNum));
+
+const strNum = "34.89";
+console.log(Math.trunc(Number(strNum)));
+
+const arr = [3.14, 7.9, -2.5, 0.99];
+const truncatedArr = arr.map(num => Math.trunc(num));
+console.log(truncatedArr);
+</script>

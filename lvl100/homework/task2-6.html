@@ -1,0 +1,32 @@
+<script>
+const randomDecimal = Math.random();
+console.log(randomDecimal);
+
+function randomZeroToOne() {
+  return Math.random();
+}
+console.log(randomZeroToOne());
+
+function rollDice() {
+  return Math.floor(Math.random() * 6) + 1;
+}
+console.log(rollDice());
+
+function flipCoin() {
+  return Math.random() < 0.5 ? "Heads" : "Tails";
+}
+console.log(flipCoin());
+
+function generatePassword() {
+  const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  let password = "";
+  for (let i = 0; i < 8; i++) {
+    password += chars[Math.floor(Math.random() * chars.length)];
+  }
+  return password;
+}
+console.log(generatePassword());
+
+const randomBoolean = Math.random() < 0.5;
+console.log(randomBoolean);
+</script>
