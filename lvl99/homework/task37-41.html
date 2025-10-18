@@ -1,0 +1,22 @@
+<script>
+console.log(Math.max(5, 10));
+
+console.log(Math.max(5, 10, 2));
+
+const arr1 = [12, 7, 9, 20];
+function findMax(array) {
+  let max = array[0];
+  for (let i = 1; i < array.length; i++) {
+    if (array[i] > max) max = array[i];
+  }
+  return max;
+}
+console.log(findMax(arr1));
+
+const positives = [3, 7, 1, 9, 4];
+console.log(Math.max(...positives));
+
+const mixed = [5, -2, 7, -10, 3];
+console.log(Math.max(...mixed));
+    
+</script>

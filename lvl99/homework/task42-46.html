@@ -1,0 +1,21 @@
+<script>
+console.log(Math.min(5, 10));
+
+console.log(Math.min(5, 10, 2));
+
+const arr1 = [12, 7, 9, 20];
+function findMin(array) {
+  let min = array[0];
+  for (let i = 1; i < array.length; i++) {
+    if (array[i] < min) min = array[i];
+  }
+  return min;
+}
+console.log(findMin(arr1));
+
+const positives = [3, 7, 1, 9, 4];
+console.log(Math.min(...positives));
+
+const mixed = [5, -2, 7, -10, 3];
+console.log(Math.min(...mixed));    
+</script>
