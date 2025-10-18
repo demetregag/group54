@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Profile + Bento Grid</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  /* ==== Social Profile Card ==== */
+  .profile-card {
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 2rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+  }
+
+  .profile-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+
+  .profile-card h1 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+  }
+
+  .profile-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0;
+  }
+
+  .social-links {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .social-links a {
+    text-decoration: none;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: transform 0.2s;
+    font-weight: bold;
+  }
+
+  .social-links a:hover, .social-links a:focus {
+    transform: scale(1.1);
+    outline: 2px solid #0077b5;
+  }
+
+  .social-links .github { background-color: #333; }
+  .social-links .linkedin { background-color: #0077b5; }
+  .social-links .twitter { background-color: #1da1f2; }
+  .social-links .instagram { background-color: #e1306c; }
+
+  /* ==== Bento Grid ==== */
+  .bento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .bento-item {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+
+  .bento-item:hover {
+    transform: scale(1.05);
+  }
+
+  /* ==== Animations ==== */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  /* ==== Responsive ==== */
+  @media (max-width: 500px) {
+    .profile-card {
+      padding: 1.5rem;
+    }
+    .profile-card img {
+      width: 100px;
+      height: 100px;
+    }
+    .profile-card h1 {
+      font-size: 1.3rem;
+    }
+    .profile-card p {
+      font-size: 0.8rem;
+    }
+    .social-links a {
+      width: 35px;
+      height: 35px;
+      font-size: 0.8rem;
+    }
+    .bento-item {
+      font-size: 0.9rem;
+      padding: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <!-- ===== Social Profile ===== -->
+  <div class="profile-card">
+    <img src="https://via.placeholder.com/120" alt="Profile Picture">
+    <h1>John Doe</h1>
+    <p>Web Developer | New York, USA</p>
+    <div class="social-links">
+      <a href="#" class="github">G</a>
+      <a href="#" class="linkedin">L</a>
+      <a href="#" class="twitter">T</a>
+      <a href="#" class="instagram">I</a>
+    </div>
+  </div>
+
+  <!-- ===== Bento Grid ===== -->
+  <div class="bento-grid">
+    <div class="bento-item">Item 1</div>
+    <div class="bento-item">Item 2</div>
+    <div class="bento-item">Item 3</div>
+    <div class="bento-item">Item 4</div>
+    <div class="bento-item">Item 5</div>
+    <div class="bento-item">Item 6</div>
+    <div class="bento-item">Item 7</div>
+    <div class="bento-item">Item 8</div>
+  </div>
+
+</body>
+</html>
