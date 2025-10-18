@@ -1,0 +1,25 @@
+<script>
+let numbers = [50, 120, 80, 200, 30];
+let lastGreater100 = numbers.slice().reverse().find(num => num > 100);
+console.log(lastGreater100);
+
+let words = ["apple", "sky", "tree", "moon"];
+let lastWithE = words.slice().reverse().find(word => word.includes("e"));
+console.log(lastWithE);
+
+let users = [
+  { name: "John", age: 30 },
+  { name: "Anna", age: 22 },
+  { name: "Mike", age: 20 }
+];
+let lastUnder25 = users.slice().reverse().find(user => user.age < 25);
+console.log(lastUnder25);
+
+let nums = [2, 4, 7, 10, 13];
+let lastOdd = nums.slice().reverse().find(num => num % 2 !== 0);
+console.log(lastOdd);
+
+let textWords = ["apple", "orange", "banana", "umbrella"];
+let lastStartsVowel = textWords.slice().reverse().find(word => /^[aeiouAEIOU]/.test(word));
+console.log(lastStartsVowel);
+</script>

@@ -1,0 +1,26 @@
+<script>
+let numbers = [10, 60, 45, 80, 30];
+let lastGreater50Index = numbers.map((n, i) => n > 50 ? i : -1).filter(i => i !== -1).pop();
+console.log(lastGreater50Index);
+
+let words = ["Sun", "Sky", "Star", "Moon"];
+let lastStartsSIndex = words.map((w, i) => w.startsWith("S") ? i : -1).filter(i => i !== -1).pop();
+console.log(lastStartsSIndex);
+
+let users = [
+  { name: "John", isActive: false },
+  { name: "Anna", isActive: true },
+  { name: "Mike", isActive: true }
+];
+let lastActiveUserIndex = users.map((u, i) => u.isActive ? i : -1).filter(i => i !== -1).pop();
+console.log(lastActiveUserIndex);
+
+let nums = [3, 5, 9, 12, 7];
+let lastDivBy3Index = nums.map((n, i) => n % 3 === 0 ? i : -1).filter(i => i !== -1).pop();
+console.log(lastDivBy3Index);
+
+let textWords = ["tree", "sun", "moon", "star"];
+let lastFourLettersIndex = textWords.map((w, i) => w.length === 4 ? i : -1).filter(i => i !== -1).pop();
+console.log(lastFourLettersIndex);
+
+</script>

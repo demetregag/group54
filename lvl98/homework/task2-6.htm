@@ -1,0 +1,34 @@
+<script>
+    let words = ["Banana", "Apple", "Avocado", "Mango"];
+let startsWithA = words.find(word => word.startsWith("A"));
+console.log(startsWithA);
+
+let users = [
+  { name: "John", age: 25 },
+  { name: "Anna", age: 32 },
+  { name: "Mike", age: 28 }
+];
+let ageOver30 = users.find(user => user.age > 30);
+console.log(ageOver30);
+
+let textWords = ["sun", "planet", "galaxy", "moon"];
+let longWord = textWords.find(word => word.length > 5);
+console.log(longWord);
+
+let products = [
+  { name: "Pen", price: 5 },
+  { name: "Notebook", price: 25 },
+  { name: "Eraser", price: 15 }
+];
+let cheapProduct = products.find(p => p.price < 20);
+console.log(cheapProduct);
+
+let students = [
+  { name: "Luka", grade: "B" },
+  { name: "Nino", grade: "A" },
+  { name: "Saba", grade: "C" }
+];
+let gradeA = students.find(student => student.grade === "A");
+console.log(gradeA);
+
+</script>

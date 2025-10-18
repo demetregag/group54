@@ -1,0 +1,25 @@
+<script>
+let numbers = [5, -3, 8, 0, -7];
+let indexLessThan0 = numbers.findIndex(num => num < 0);
+console.log(indexLessThan0);
+
+let words = ["play", "reading", "talking", "run"];
+let indexEndsWithIng = words.findIndex(word => word.endsWith("ing"));
+console.log(indexEndsWithIng);
+
+let users = [
+  { name: "John", isActive: false },
+  { name: "Anna", isActive: true },
+  { name: "Mike", isActive: false }
+];
+let indexActiveUser = users.findIndex(user => user.isActive === true);
+console.log(indexActiveUser);
+
+let nums = [3, 25, 40, 7, 90];
+let indexMultipleOf10 = nums.findIndex(num => num % 10 === 0);
+console.log(indexMultipleOf10);
+
+let fruits = ["apple", "pear", "mango", "grape"];
+let indexFiveLetters = fruits.findIndex(fruit => fruit.length === 5);
+console.log(indexFiveLetters);
+</script>
