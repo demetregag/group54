@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Preview Card</title>
+<style>
+  /* Base Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  /* Card Container */
+  .card {
+    display: flex;
+    max-width: 700px;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    flex-direction: row;
+  }
+
+  /* Card Image */
+  .card img {
+    width: 50%;
+    object-fit: cover;
+  }
+
+  /* Card Content */
+  .card-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .card-content h1 {
+    font-size: 1.8rem;
+    margin: 0 0 1rem 0;
+    color: hsl(212, 21%, 14%);
+  }
+
+  .card-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: hsl(220, 14%, 75%);
+    margin-bottom: 1.5rem;
+  }
+
+  .price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .price span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: hsl(158, 36%, 37%);
+  }
+
+  .price del {
+    color: hsl(220, 14%, 75%);
+  }
+
+  .btn {
+    text-decoration: none;
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s, transform 0.2s;
+  }
+
+  .btn:hover {
+    background-color: hsl(158, 36%, 25%);
+    transform: scale(1.05);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+      max-width: 350px;
+    }
+
+    .card img, .card-content {
+      width: 100%;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <img src="https://via.placeholder.com/350x350" alt="Product Image">
+  <div class="card-content">
+    <h1>Gabrielle Essence Eau De Parfum</h1>
+    <p>A floral, fruity fragrance for women that’s perfect for any occasion. Elegant and luxurious.</p>
+    <div class="price">
+      <span>$149.99</span>
+      <del>$169.99</del>
+    </div>
+    <a href="#" class="btn">Add to Cart</a>
+  </div>
+</div>
+
+</body>
+</html>

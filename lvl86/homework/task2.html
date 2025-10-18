@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Component</title>
+  <style>
+    /* Reset and global styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: hsl(212, 23%, 69%);
+    }
+
+    /* Card container */
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* QR code image */
+    .qr-code {
+      width: 100%;
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+
+    /* Title */
+    h1 {
+      font-size: 18px;
+      color: hsl(217, 19%, 35%);
+      margin-bottom: 10px;
+    }
+
+    /* Description */
+    p {
+      font-size: 14px;
+      color: hsl(217, 19%, 35%);
+      margin-bottom: 20px;
+    }
+
+    /* Attribution */
+    .attribution {
+      font-size: 12px;
+      color: hsl(217, 19%, 35%);
+    }
+
+    /* Responsive design */
+    @media (max-width: 400px) {
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/150" alt="QR Code" class="qr-code">
+    <h1>Improve your front-end skills by building projects</h1>
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level.</p>
+    <p class="attribution">Challenge by <a href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H" target="_blank">Frontend Mentor</a></p>
+  </div>
+
+</body>
+</html>
+
