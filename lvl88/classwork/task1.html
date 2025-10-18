@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipe Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin:0; padding:0; font-family: 'Outfit', sans-serif; }
+
+  body {
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+
+  .container {
+    max-width: 900px;
+    width: 100%;
+    background-color: hsl(0,0%,100%);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.1);
+  }
+
+  .recipe-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .content {
+    padding: 30px;
+  }
+
+  .content h1 {
+    font-size: 28px;
+    color: hsl(220, 13%, 13%);
+    margin-bottom: 15px;
+  }
+
+  .content p {
+    font-size: 16px;
+    color: hsl(219, 14%, 63%);
+    margin-bottom: 25px;
+    line-height: 1.6;
+  }
+
+  .ingredients, .instructions {
+    margin-bottom: 25px;
+  }
+
+  .ingredients h2, .instructions h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: hsl(220, 13%, 13%);
+  }
+
+  .ingredients ul {
+    list-style: disc inside;
+  }
+
+  .ingredients li, .instructions li {
+    margin-bottom: 10px;
+    color: hsl(219, 14%, 63%);
+    font-size: 15px;
+  }
+
+  .instructions ol {
+    padding-left: 20px;
+  }
+
+  @media(max-width: 768px){
+    .recipe-img {
+      height: 200px;
+    }
+    .content h1 {
+      font-size: 24px;
+    }
+  }
+
+  @media(max-width: 480px){
+    .container {
+      padding: 20px;
+    }
+    .content h1 {
+      font-size: 20px;
+    }
+    .content p, .ingredients li, .instructions li {
+      font-size: 14px;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img class="recipe-img" src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800" alt="Recipe Image">
+  <div class="content">
+    <h1>Spaghetti Bolognese</h1>
+    <p>A classic Italian pasta dish with a rich, meaty tomato sauce. Perfect for family dinners or special occasions.</p>
+
+    <div class="ingredients">
+      <h2>Ingredients</h2>
+      <ul>
+        <li>200g spaghetti</li>
+        <li>300g minced beef</li>
+        <li>1 onion, chopped</li>
+        <li>2 cloves garlic, minced</li>
+        <li>400g canned tomatoes</li>
+        <li>2 tbsp olive oil</li>
+        <li>Salt and pepper to taste</li>
+      </ul>
+    </div>
+
+    <div class="instructions">
+      <h2>Instructions</h2>
+      <ol>
+        <li>Cook the spaghetti according to package instructions.</li>
+        <li>Heat olive oil in a pan and sauté onion and garlic until translucent.</li>
+        <li>Add minced beef and cook until browned.</li>
+        <li>Pour in canned tomatoes and simmer for 20 minutes.</li>
+        <li>Season with salt and pepper, then serve sauce over spaghetti.</li>
+      </ol>
+    </div>
+  </div>
+</div>
+</body>
+</html>
