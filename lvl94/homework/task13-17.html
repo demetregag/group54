@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let numbers = [];
+numbers.push(1, 2, 3, 4, 5);
+console.log(numbers);
+
+let fruits = ["apple", "banana", "orange"];
+fruits.push("mango", "kiwi");
+console.log(fruits);
+
+function collectInputs(inputs) {
+  let arr = [];
+  for (let str of inputs) {
+    if (str === "stop") break;
+    arr.push(str);
+  }
+  return arr;
+}
+
+let nums = [1, 2, 3, 4];
+nums.push(nums.reduce((a, b) => a + b, 0));
+console.log(nums);
+
+let evens = [];
+for (let i = 1; i <= 10; i++) {
+  evens.push(i * 2);
+}
+console.log(evens);
+    </script>
+</body>
+</html>

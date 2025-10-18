@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function cleanText(str) {
+  return str.trim();
+}
+
+let leading = "   Hello World";
+console.log(leading.trimStart());
+
+let trailing = "Hello World   ";
+console.log(trailing.trimEnd());
+
+function cleanUsernames(usernames) {
+  return usernames.map(u => u.trim());
+}
+
+let input = "    ";
+console.log(input.trim().length === 0);
+    </script>
+</body>
+</html>

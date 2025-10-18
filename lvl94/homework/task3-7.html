@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function startsWithHello(str) {
+  return str.startsWith("Hello");
+}
+
+function checkFilename(name) {
+  return name.startsWith("img_") ? "Image file" : "Not an image file";
+}
+
+let sentence = "Once upon a time in a land far away";
+console.log(sentence.startsWith("Once upon"));
+
+function startsWithAt(str, sub, pos) {
+  return str.startsWith(sub, pos);
+}
+
+function countDoctors(names) {
+  return names.filter(n => n.startsWith("Dr.")).length;
+}
+    </script>
+</body>
+</html>
