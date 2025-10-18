@@ -1,0 +1,21 @@
+<script>
+    const numbers = [1, 2, 3, -4, 5];
+console.log(numbers.some(num => num < 0));
+
+const strings = ["short", "a very long string", "medium"];
+console.log(strings.some(str => str.length > 10));
+
+const ages = [20, 25, 16, 30];
+console.log(ages.some(age => age < 18));
+
+const nums = [2, 4, 7, 10, 12];
+console.log(nums.some(num => num % 5 === 0));
+
+const users = [
+  { name: "Alice", isActive: false },
+  { name: "Bob", isActive: false },
+  { name: "Charlie", isActive: true }
+];
+console.log(users.some(user => user.isActive));
+
+</script>

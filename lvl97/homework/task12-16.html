@@ -1,0 +1,24 @@
+<script>
+const numbers = [1, 2, 3, 4, 5];
+const cubes = numbers.map(num => num ** 3);
+console.log(cubes);
+
+const words = ["hello", "world", "js"];
+const reversedWords = words.map(word => word.split("").reverse().join(""));
+console.log(reversedWords);
+
+const celsius = [0, 10, 20, 30];
+const fahrenheit = celsius.map(temp => (temp * 9/5) + 32);
+console.log(fahrenheit);
+
+const nums = [1, 2, 3, 4];
+const strings = nums.map(num => `Value: ${num}`);
+console.log(strings);
+
+const people = [
+  { firstName: "John", lastName: "Doe" },
+  { firstName: "Jane", lastName: "Smith" }
+];
+const fullNames = people.map(p => `${p.firstName} ${p.lastName}`);
+console.log(fullNames);
+</script>
