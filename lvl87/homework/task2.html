@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NFT Preview Card</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin:0; padding:0; font-family: 'Outfit', sans-serif; }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+  }
+
+  .card {
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 350px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .card img.nft {
+    width: 100%;
+    display: block;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+
+  .card img.nft:hover {
+    opacity: 0.7;
+  }
+
+  .card .content {
+    padding: 20px;
+  }
+
+  .card .content h1 {
+    font-size: 22px;
+    color: hsl(0,0%,100%);
+    margin-bottom: 10px;
+  }
+
+  .card .content p {
+    font-size: 14px;
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 15px;
+  }
+
+  .card .price-time {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .price-time .price {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+  }
+
+  .price-time .time {
+    color: hsl(215, 51%, 70%);
+    font-size: 14px;
+  }
+
+  .card .divider {
+    border-top: 1px solid hsl(215, 32%, 27%);
+    margin-bottom: 15px;
+  }
+
+  .card .creator {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .creator img {
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+
+  .creator p {
+    font-size: 14px;
+    color: hsl(215, 51%, 70%);
+  }
+
+  .creator p span {
+    color: hsl(0,0%,100%);
+  }
+
+  @media(max-width: 400px){
+    .card { max-width: 90%; }
+    .creator img { width: 30px; }
+    .card .content h1 { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <img class="nft" src="https://images.unsplash.com/photo-1612831661425-0a69e7d2561c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="NFT image">
+  <div class="content">
+    <h1>Equilibrium #3429</h1>
+    <p>Our Equilibrium collection promotes balance and calm.</p>
+    <div class="price-time">
+      <span class="price">0.041 ETH</span>
+      <span class="time">3 days left</span>
+    </div>
+    <div class="divider"></div>
+    <div class="creator">
+      <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Creator avatar">
+      <p>Creation of <span>Jules Wyvern</span></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
