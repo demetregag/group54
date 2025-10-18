@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Four Card Feature Section</title>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  /* Global Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  main {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .feature-container {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .feature-container h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .feature-container p.description {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 40px;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  }
+
+  .card-header {
+    height: 200px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card-header.supervisor { background-color: #ff7a00; }
+  .card-header.team-builder { background-color: #00697e; }
+  .card-header.calculator { background-color: #004f2d; }
+  .card-header.karma { background-color: #29a19c; }
+
+  .card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    font-size: 14px;
+    color: #777;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .card-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .feature-container h1 { font-size: 30px; }
+    .feature-container p.description { font-size: 13px; }
+    .card { padding: 20px; }
+    .card h2 { font-size: 20px; }
+    .card p { font-size: 13px; }
+  }
+
+  @media (max-width: 768px) {
+    .card-container {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .feature-container h1 { font-size: 24px; }
+    .feature-container p.description { font-size: 12px; }
+    .card { padding: 15px; }
+    .card h2 { font-size: 18px; }
+    .card p { font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<main>
+  <section class="feature-container">
+    <h1>Reliable, efficient delivery</h1>
+    <p class="description">Powered by Technology</p>
+    <div class="card-container">
+      <article class="card">
+        <div class="card-header supervisor"></div>
+        <h2>Supervisor</h2>
+        <p>Monitors activity to identify project roadblocks</p>
+      </article>
+      <article class="card">
+        <div class="card-header team-builder"></div>
+        <h2>Team Builder</h2>
+        <p>Scans our talent network to create the optimal team for your project</p>
+      </article>
+      <article class="card">
+        <div class="card-header calculator"></div>
+        <h2>Calculator</h2>
+        <p>Uses data from past projects to provide better delivery estimates</p>
+      </article>
+      <article class="card">
+        <div class="card-header karma"></div>
+        <h2>Karma</h2>
+        <p>Regularly evaluates our talent to ensure quality</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>

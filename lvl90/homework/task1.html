@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3-Column Preview Card</title>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  main {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  }
+
+  .card-header {
+    height: 200px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card-header.sedan { background-color: #ff7a00; }
+  .card-header.suv { background-color: #00697e; }
+  .card-header.luxury { background-color: #004f2d; }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+
+  button {
+    background-color: #29a19c;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #237c74;
+  }
+
+  /* Responsive for tablets */
+  @media (max-width: 1024px) {
+    .card-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+
+  /* Responsive for mobile */
+  @media (max-width: 768px) {
+    .card-container {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    h2 { font-size: 20px; }
+    p { font-size: 13px; }
+    button { font-size: 13px; padding: 10px 25px; }
+  }
+
+</style>
+</head>
+<body>
+
+<main>
+  <section class="card-container">
+    <article class="card">
+      <div class="card-header sedan"></div>
+      <h2>სედანი</h2>
+      <p>აირჩიეთ სედანი მისი ეკონომიურობისა და შესანიშნავი საწვავის ეკონომიისთვის. იდეალურია ქალაქში ან მოგზაურობაში.</p>
+      <button>მეტი</button>
+    </article>
+
+    <article class="card">
+      <div class="card-header suv"></div>
+      <h2>SUV</h2>
+      <p>SUV-ები შესანიშნავია თქვენი შემდეგი ოჯახური მოგზაურობისთვის. დიდი სივრცით და კომფორტით, იდეალურია ნებისმიერი თავგადასავლისთვის.</p>
+      <button>მეტი</button>
+    </article>
+
+    <article class="card">
+      <div class="card-header luxury"></div>
+      <h2>ლუქსი</h2>
+      <p>გაიგეთ საუკეთესო მანქანის ბრენდები დაბალი ფასებით. ისიამოვნეთ ლუქსის სრულ კომფორტით და სტილით.</p>
+      <button>მეტი</button>
+    </article>
+  </section>
+</main>
+
+</body>
+</html>
